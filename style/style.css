@@ -60,6 +60,7 @@ body {
 
 .output {
   width: 200px;
+  height: auto;
 }
 
 button {
