@@ -11,12 +11,15 @@ submitButton.addEventListener("click", () => {
 
   containerTodos.innerHTML += `
     <div class="todo">
-      <h1>${index + 1}</h1>
-      <p id="todo-${index}">${inputan.value}</p>
-    </div>
-    <div>
+      <h3>${index + 1}</h3>
+      <div class="">
+        <p id="todo-${index}">${inputan.value}</p>
+      </div>
       <button onclick="editTodo(${index})">Edit</button>
       <button onclick="deleteTodo(${index})">Delete</button>
+    </div>
+    <div>
+      
     </div>
     `;
 
@@ -36,6 +39,7 @@ function editTodo(i) {
 function deleteTodo(i) {
   todos.splice(i, 1);
   document.getElementById(`todo-${i}`).remove();
+  index = index - 1;
 
   const containerTodos = document.getElementById("containerTodos");
 
@@ -43,7 +47,7 @@ function deleteTodo(i) {
   todos.forEach((todo, index) => {
     containerTodos.innerHTML += `
       <div class="todo">
-        <h1>${index + 1}</h1>
+        <h3>${index + 1}</h3>
         <p id="todo-${index}">${todo}</p>
       </div>
       <div>

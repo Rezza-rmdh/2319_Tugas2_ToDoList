@@ -5,14 +5,14 @@ body {
   overflow: hidden;
   justify-content: center;
   align-items: center;
-  background-color: #5a5a5a;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .container {
   padding: 10px 20px;
-  width: 60%;
-  height: 70%;
-  background-color: #8d8d8d;
+  width: 50vh;
+  height: 50vh;
+  background-color: rgba(0, 0, 0, 0.5);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -29,15 +29,15 @@ body {
 }
 
 .input-todo {
-  width: 90%;
-  height: 50px;
-  font-size: 20px;
+  width: 300px;
+  height: 20px;
+  font-size: 10px;
   padding: 0 5px;
 }
 
 .submit-todo {
-  height: 50px;
-  width: 7%;
+  height: 20px;
+  width: 20%;
 }
 
 .container-todos {
@@ -52,7 +52,14 @@ body {
 
 .todo {
   width: 100%;
+  color: white;
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
+}
+
+button {
+  width: 20%;
+  height: 20px;
+  font-size: 10px;
 }
