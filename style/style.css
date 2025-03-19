@@ -29,7 +29,7 @@ body {
 }
 
 .input-todo {
-  width: 300px;
+  width: 70%;
   height: 20px;
   font-size: 10px;
   padding: 0 5px;
@@ -56,6 +56,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+.output {
+  width: 200px;
 }
 
 button {

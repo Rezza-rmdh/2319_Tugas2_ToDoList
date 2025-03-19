@@ -12,14 +12,11 @@ submitButton.addEventListener("click", () => {
   containerTodos.innerHTML += `
     <div class="todo">
       <h3>${index + 1}</h3>
-      <div class="">
+      <div class="output">
         <p id="todo-${index}">${inputan.value}</p>
       </div>
       <button onclick="editTodo(${index})">Edit</button>
       <button onclick="deleteTodo(${index})">Delete</button>
-    </div>
-    <div>
-      
     </div>
     `;
 
@@ -48,11 +45,11 @@ function deleteTodo(i) {
     containerTodos.innerHTML += `
       <div class="todo">
         <h3>${index + 1}</h3>
-        <p id="todo-${index}">${todo}</p>
-      </div>
-      <div>
+        <div class="output">
+          <p id="todo-${index}">${todo}</p>
+        </div>
         <button onclick="editTodo(${index})">Edit</button>
-        <button onclick="deleteTodo(${index})">Delete</button>      
+        <button onclick="deleteTodo(${index})">Delete</button> 
       </div>
       `;
   });
